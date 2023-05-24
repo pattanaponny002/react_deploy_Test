@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+$mb: 400px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xx-l: 1560px;
+.conversationCard_container {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 5px 10px black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.5s;
+  background-color: white;
+  .container_profile {
+    padding: 0 1rem 0 0;
+    border-right: 5px solid gray;
+    .wrapper_profile {
+      .profile {
+        border: 5px solid;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+  .wrapper_information {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+    text-transform: capitalize;
+  }
+  .wrapper_button {
+    button {
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      .icon {
+        transition: color 0.5s;
+        color: royalblue;
+      }
+    }
+  }
+  .wrapper_button:hover {
+    button {
+      background: rgba(0, 0, 0, 0.5);
+      .icon {
+        color: goldenrod;
+      }
+    }
+  }
+}
+.conversationCard_container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}

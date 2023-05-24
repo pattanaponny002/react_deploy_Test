@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.container_input {
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(223, 75, 122, 0.8);
+}
+.container_input .wrapper_input {
+  display: flex;
+  position: relative;
+  width: 60%;
+}
+.container_input .wrapper_input input[class=inputText] {
+  width: 100%;
+  padding: 0 0 0 1rem;
+  border-radius: 30px;
+  height: 35px;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0px 0px 5px black;
+}
+.container_input .wrapper_input .icon_search {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  cursor: pointer;
+  color: grey;
+}
+.container_input .wrapper_input .icon_search:hover {
+  color: red;
+}
+.container_input .container_tool {
+  display: flex;
+  gap: 0.5rem;
+}
+.container_input .container_tool .icon_tool {
+  color: gray;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.container_input .container_tool .icon_tool:hover {
+  color: crimson;
+}/*# sourceMappingURL=InputSection.css.map */

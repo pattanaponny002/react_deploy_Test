@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+$mb: 400px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xx-l: 1560px;
+.container_searchbar {
+  height: 45%;
+  display: flex;
+  gap: 0.5rem;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  .container_search {
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: 85%;
+    max-width: 350px;
+    margin: 5% 0 0 0;
+    input[class="search"] {
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      height: 50px;
+      font-size: 1rem;
+      border-radius: 30px;
+      padding: 0 0 0 1rem;
+      border: none;
+      outline: none;
+      box-shadow: 0 5px 10px black;
+    }
+    .icon_search {
+      border-radius: 50%;
+      cursor: pointer;
+      top: 20%;
+      right: 5%;
+      position: absolute;
+      color: gray;
+      transition: color 0.5s;
+    }
+    .icon_search:hover {
+      color: red;
+    }
+  }
+  .searched_friend {
+    width: 99%;
+    min-height: 250px;
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 1rem;
+    span[class="wrapper_Card"] {
+      width: 90%;
+    }
+    // .friend_card {
+    //   width: 100%;
+    //   border: 2px solid black;
+    //   min-height: 80px;
+    //   display: flex;
+    //   align-items: center;
+
+    //   justify-content: space-evenly;
+    //   .profile {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     img {
+    //       width: 50px;
+    //       height: 50px;
+    //     }
+    //   }
+    // }
+    .non_user {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+  .searched_friend::-webkit-scrollbar {
+    width: 1vw;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .searched_friend::-webkit-scrollbar-thumb {
+    width: 1vw;
+    border-radius: 15px;
+    background: rgba(221, 54, 54, 0.5);
+  }
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.conversationCard_container {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 5px 10px black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.5s;
+  background-color: white;
+}
+.conversationCard_container .container_profile {
+  padding: 0 1rem 0 0;
+  border-right: 5px solid gray;
+}
+.conversationCard_container .container_profile .wrapper_profile .profile {
+  border: 5px solid;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.conversationCard_container .wrapper_information {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.conversationCard_container .wrapper_button button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+.conversationCard_container .wrapper_button button .icon {
+  transition: color 0.5s;
+  color: royalblue;
+}
+.conversationCard_container .wrapper_button:hover button {
+  background: rgba(0, 0, 0, 0.5);
+}
+.conversationCard_container .wrapper_button:hover button .icon {
+  color: goldenrod;
+}
+
+.conversationCard_container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=ConversationCard.css.map */

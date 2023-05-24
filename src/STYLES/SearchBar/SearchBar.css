@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.container_searchbar {
+  height: 45%;
+  display: flex;
+  gap: 0.5rem;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+.container_searchbar .container_search {
+  display: flex;
+  position: relative;
+  height: 50px;
+  width: 85%;
+  max-width: 350px;
+  margin: 5% 0 0 0;
+}
+.container_searchbar .container_search input[class=search] {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  height: 50px;
+  font-size: 1rem;
+  border-radius: 30px;
+  padding: 0 0 0 1rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 10px black;
+}
+.container_searchbar .container_search .icon_search {
+  border-radius: 50%;
+  cursor: pointer;
+  top: 20%;
+  right: 5%;
+  position: absolute;
+  color: gray;
+  transition: color 0.5s;
+}
+.container_searchbar .container_search .icon_search:hover {
+  color: red;
+}
+.container_searchbar .searched_friend {
+  width: 99%;
+  min-height: 250px;
+  display: flex;
+  padding-top: 5%;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  gap: 1rem;
+}
+.container_searchbar .searched_friend span[class=wrapper_Card] {
+  width: 90%;
+}
+.container_searchbar .searched_friend .non_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.container_searchbar .searched_friend::-webkit-scrollbar {
+  width: 1vw;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.container_searchbar .searched_friend::-webkit-scrollbar-thumb {
+  width: 1vw;
+  border-radius: 15px;
+  background: rgba(221, 54, 54, 0.5);
+}/*# sourceMappingURL=SearchBar.css.map */

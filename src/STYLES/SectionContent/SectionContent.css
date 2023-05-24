@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.container_section {
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(45deg, rgb(252, 206, 66) 0%, rgb(253, 128, 168) 100%);
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0 5% 0;
+}
+.container_section .container_chat {
+  width: 80%;
+  min-width: 700px;
+  max-width: 1000px;
+  display: flex;
+  min-height: 800px;
+  height: 80%;
+  background-color: white;
+}/*# sourceMappingURL=SectionContent.css.map */

@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.container_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(45deg, rgb(252, 206, 66) 0%, rgb(253, 128, 168) 100%);
+}
+.container_login .section_register {
+  margin-top: 5%;
+  display: flex;
+  max-width: 500px;
+  width: 95%;
+  min-height: 650px;
+  border-radius: 50px;
+  padding: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+.container_login .section_register .container_register {
+  display: flex;
+  border-radius: 50px;
+  padding: 0.5rem;
+  transition: transform 0.5s;
+  gap: 0.5rem;
+}
+.container_login .section_register .container_register .boxes_register {
+  min-width: 460px;
+  width: 95%;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 10% 0 5% 0;
+  opacity: 1;
+  transition: opacity 2s, transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container_login .section_register .container_register .boxes_register input[id=image_input] {
+  display: none;
+}
+.container_login .section_register .container_register .boxes_register .header_login {
+  font-size: 4rem;
+  margin-bottom: 5%;
+}
+.container_login .section_register .container_register .boxes_register .selector_container {
+  position: relative;
+}
+.container_login .section_register .container_register .boxes_register .selector_container img[class=profile] {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  box-shadow: 0 0 10px black;
+}
+.container_login .section_register .container_register .boxes_register .selector_container label[id=image_label] {
+  position: absolute;
+  width: 40px;
+  aspect-ratio: 1;
+  bottom: 40%;
+  right: -10%;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_login .section_register .container_register .boxes_register .wrapper_inputInfo {
+  position: relative;
+}
+.container_login .section_register .container_register .boxes_register .wrapper_inputInfo input[class=inputInfo] {
+  font-family: "Poppins", sans-serif;
+  min-width: 350px;
+  height: 50px;
+  padding: 0 0 0 1.5rem;
+  border: 5px solid white;
+  border-radius: 30px;
+  transition: border 0.5s;
+  font-size: 1rem;
+}
+.container_login .section_register .container_register .boxes_register .wrapper_inputInfo input[class=inputInfo]:hover {
+  border: 5px solid pink;
+}
+.container_login .section_register .container_register .boxes_register .wrapper_inputInfo .iconInfo {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+.container_login .section_register .container_register .boxes_register .Authentication {
+  width: 370px;
+  height: 60px;
+  border-radius: 30px;
+  background: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container_login .section_register .container_register .boxes_register .Authentication span {
+  color: white;
+  font-size: 1.5rem;
+}
+.container_login .section_register .container_register .boxes_register .Authentication:hover {
+  background-color: black;
+}
+.container_login .section_register .container_register .boxes_register .desc_dont_ghave_account span[class=register] {
+  color: purple;
+  cursor: pointer;
+}
+.container_login .section_register .container_register .boxes_register .desc_dont_ghave_account span[class=register]:hover {
+  color: salmon;
+}
+.container_login .section_register .container_register .boxes_register .container_oAuth {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container_login .section_register .container_register .boxes_register .container_oAuth .wrapper_oAuth {
+  background-color: black;
+  min-width: 370px;
+  height: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: relative;
+}
+.container_login .section_register .container_register .boxes_register .container_oAuth .wrapper_oAuth .image_icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 5%;
+}
+.container_login .section_register .container_register .boxes_register .container_oAuth .wrapper_oAuth span {
+  text-transform: capitalize;
+  color: white;
+}
+.container_login .section_register .container_register .boxes_register .container_oAuth .wrapper_oAuth:hover {
+  background-color: white;
+}
+.container_login .section_register .container_register .boxes_register .container_oAuth .wrapper_oAuth:hover span {
+  color: black;
+}
+.container_login .section_register .container_register .boxes_register .GetBack {
+  color: black;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.container_login .section_register .container_register .boxes_register .GetBack:hover {
+  color: purple;
+}
+.container_login .section_register .container_register .boxes_register .button_login {
+  margin-top: 2%;
+  cursor: pointer;
+  width: 370px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background: rgb(253, 128, 168);
+  transition: 0.5s;
+}
+.container_login .section_register .container_register .boxes_register .button_login:hover {
+  background: rgb(252, 206, 66);
+}
+.container_login .section_register .container_register .boxes_register.active {
+  opacity: 0;
+  transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateX(-1000px);
+}
+.container_login .section_register .container_register .boxes_enroll {
+  min-width: 460px;
+  width: 95%;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 5% 0 5% 0;
+  opacity: 1;
+  transform: translateX(0px);
+  transition: opacity 2s, transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container_login .section_register .container_register .boxes_enroll input[id=image_input] {
+  display: none;
+}
+.container_login .section_register .container_register .boxes_enroll .selector_container {
+  position: relative;
+}
+.container_login .section_register .container_register .boxes_enroll .selector_container img[class=profile] {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  box-shadow: 0 0 10px black;
+  object-fit: fill;
+  border: 10px solid orange;
+}
+.container_login .section_register .container_register .boxes_enroll .selector_container label[id=image_label] {
+  position: absolute;
+  width: 40px;
+  aspect-ratio: 1;
+  bottom: 40%;
+  right: -10%;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_login .section_register .container_register .boxes_enroll .header_signup {
+  font-size: 4rem;
+}
+.container_login .section_register .container_register .boxes_enroll .wrapper_inputInfo {
+  position: relative;
+}
+.container_login .section_register .container_register .boxes_enroll .wrapper_inputInfo input[class=inputInfo] {
+  font-family: "Poppins", sans-serif;
+  min-width: 350px;
+  height: 50px;
+  padding: 0 0 0 1.5rem;
+  border: 5px solid white;
+  border-radius: 30px;
+  transition: border 0.5s;
+  font-size: 1rem;
+}
+.container_login .section_register .container_register .boxes_enroll .wrapper_inputInfo input[class=inputInfo]:hover {
+  border: 5px solid lightseagreen;
+}
+.container_login .section_register .container_register .boxes_enroll .wrapper_inputInfo .iconInfo {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+.container_login .section_register .container_register .boxes_enroll .wrapper_inputInfo span[class=available_username] {
+  position: absolute;
+  top: -35%;
+  left: 5%;
+  font-size: 0.8rem;
+}
+.container_login .section_register .container_register .boxes_enroll .desc_signup {
+  width: 350px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.container_login .section_register .container_register .boxes_enroll .desc_signup span {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.container_login .section_register .container_register .boxes_enroll .desc_signup a {
+  cursor: pointer;
+  color: salmon;
+  transition: color 0.5s;
+  font-size: 1.5rem;
+}
+.container_login .section_register .container_register .boxes_enroll .desc_signup a:hover {
+  color: purple;
+}
+.container_login .section_register .container_register .boxes_enroll .button_signup {
+  width: 370px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: lightseagreen;
+  transition: background 0.5s;
+}
+.container_login .section_register .container_register .boxes_enroll .button_signup span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+.container_login .section_register .container_register .boxes_enroll .button_signup:hover {
+  background-color: black;
+}
+.container_login .section_register .container_register .boxes_enroll.active {
+  opacity: 0;
+  transform: translateX(500px);
+}
+.container_login .section_register .container_register.active {
+  transform: translateX(-460px);
+}
+@media (max-width: 400px) {
+  .container_login .section_register {
+    margin-top: 10%;
+    height: 80%;
+  }
+  .container_login .section_register .container_register {
+    width: 345px;
+    display: flex;
+  }
+  .container_login .section_register .container_register .boxes_register {
+    min-width: 350px;
+  }
+  .container_login .section_register .container_register .boxes_register .wrapper_inputInfo input[class=inputInfo] {
+    min-width: 300px;
+  }
+  .container_login .section_register .container_register .boxes_register .container_oAuth .wrapper_oAuth {
+    min-width: 350px;
+  }
+  .container_login .section_register .container_register .boxes_register .button_login {
+    width: 320px;
+  }
+  .container_login .section_register .container_register .boxes_enroll {
+    margin-left: 30%;
+    min-width: 350px;
+  }
+  .container_login .section_register .container_register .boxes_enroll .wrapper_inputInfo input[class=inputInfo] {
+    min-width: 300px;
+  }
+  .container_login .section_register .container_register .boxes_enroll .desc_signup {
+    width: 320px;
+  }
+  .container_login .section_register .container_register .boxes_enroll .button_signup {
+    width: 320px;
+  }
+}/*# sourceMappingURL=Login.css.map */

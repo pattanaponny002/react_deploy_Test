@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+$mb: 400px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xx-l: 1560px;
+.container_userchat {
+  background-color: rgb(223, 75, 122);
+  display: flex;
+  justify-content: center;
+  height: 45%;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+  .container_conversation {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1rem;
+  }
+  .container_conversation::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1vw;
+    border-radius: 15px;
+  }
+  .container_conversation::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  }
+  .container_conversation ::-webkit-scrollbar-button {
+    background-color: red;
+  }
+}

@@ -1,0 +1,6 @@
+.container_search_side {
+  width: 50%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=SearchSide.css.map */
